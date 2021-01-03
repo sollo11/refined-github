@@ -16,7 +16,8 @@ function getCommitTitleField(): HTMLInputElement | undefined {
 	return select<HTMLInputElement>(`${mergeFormSelector} #merge_title_field`);
 }
 
-function getPRNumber(): string {
+// eslint-disable-next-line import/prefer-default-export
+export function getPRNumber(): string {
 	return select('.gh-header-number')!.textContent!;
 }
 
